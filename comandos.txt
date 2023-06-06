@@ -1,0 +1,174 @@
+lilia@LILIANA MINGW64 ~/DH
+$ 20230605-LilianaMuñoz/
+bash: 20230605-LilianaMuñoz/: Is a directory
+
+lilia@LILIANA MINGW64 ~/DH
+$ cd 20230605-LilianaMuñoz/
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz
+$ ls
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz
+$ git init
+Initialized empty Git repository in C:/Users/lilia/DH/20230605-LilianaMuñoz/.git/
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ git remote add origin https://github.com/Liliana331/20230605-LilianaMu-oz.git
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ touch comandos.txt main.js index.html
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ ls
+comandos.txt  index.html  main.js
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ git add .
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ git commit -m "commit 01 de LilianaMuñozDuque"
+[main (root-commit) d14956d] commit 01 de LilianaMuñozDuque
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 258 bytes | 258.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Liliana331/20230605-LilianaMu-oz.git
+ * [new branch]      main -> main
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ git branch feature
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ git branch
+  feature
+* main
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ ls
+Hardware/  SeguridadInformatica/  Software/  comandos.txt  index.html  main.js
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ touch Hardware/resumen.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ ls -R
+.:
+Hardware/  SeguridadInformatica/  Software/  comandos.txt  index.html  main.js
+
+./Hardware:
+resumen.txt
+
+./SeguridadInformatica:
+
+./Software:
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ touch Software/resumen.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ touch SeguridadInformatica/resumen.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ ls -R
+.:
+Hardware/  SeguridadInformatica/  Software/  comandos.txt  index.html  main.js
+
+./Hardware:
+resumen.txt
+
+./SeguridadInformatica:
+resumen.txt
+
+./Software:
+resumen.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ git push origin feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Liliana331/20230605-LilianaMu-oz/pull/new/feature
+remote:
+To https://github.com/Liliana331/20230605-LilianaMu-oz.git
+ * [new branch]      feature -> feature
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ git add .
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ git commit -m "commit 02 de LilianaMuñozDuque"
+[feature 70f9266] commit 02 de LilianaMuñozDuque
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 394 bytes | 394.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Liliana331/20230605-LilianaMu-oz.git
+   d14956d..70f9266  feature -> feature
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ git che
+checkout      cherry        cherry-pick
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (feature)
+$ git checkout main
+Switched to branch 'main'
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ ls
+comandos.txt  index.html  main.js
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ mv main.js resumenHardware.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ ls
+comandos.txt  index.html  resumenHardware.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ mv index.html resumenSoftware.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ ls
+comandos.txt  resumenHardware.txt  resumenSoftware.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ vim resumenSoftware.txt
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ cat resumenSoftware.txt
+3 Ejemplos de Software
+
+Visual Studio Code
+Google Chrome
+Adobe Photoshop3 Ejemplos de Software
+
+
+
+lilia@LILIANA MINGW64 ~/DH/20230605-LilianaMuñoz (main)
+$ vim resumenHardware.txt
+
